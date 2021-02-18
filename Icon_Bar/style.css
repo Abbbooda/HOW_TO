@@ -1,0 +1,42 @@
+:root{
+    --active : #4caf50;
+    --primary : #555;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:active{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul > li{
+    float: left;
+    background-color: var(--primary);
+}
+
+ul > li > a{
+    font-size: 1.5rem;
+    display: block;
+    padding: 15px;
+}
+
+ul > li > a.active{
+    background-color: var(--active);
+}
+
+ul > li:not(:first-of-type):hover > a{
+    background-color: #000;
+}
