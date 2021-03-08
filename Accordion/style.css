@@ -1,0 +1,43 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial','Helvetica',sans-serif;
+    font-size: 16px;
+}
+
+.accordion{
+    width: 800px;
+    margin: 50px auto;
+}
+
+.accordion .accor-head{
+    background-color: #ccc;
+    color: #555;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accor-head span:after{
+    content: '\2212';
+    font-family: 'font Awesome 5 free';
+}
+
+.accor-head.active span:after{
+    content: '\002B';
+    font-family: 'font Awesome 5 free';
+}
+
+.accor-body{
+    padding: 20px;
+    display: none;
+}
+.accor-body p{
+    line-height: 1.6;
+}
